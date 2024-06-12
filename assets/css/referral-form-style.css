@@ -1,0 +1,38 @@
+#referral-form {
+    padding: 1em;
+    max-width: 600px;
+    background-color: #3333;
+    border-radius: 3px
+}
+
+#referral-form .form-field {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 4em
+}
+
+.form-field.cross,
+.form-field.check {
+	position: relative;
+}
+
+.form-field.cross::after,
+.form-field.check::after {
+	position: absolute;
+	right: 3em;
+}
+
+
+.form-field.check::after {
+	color: #090;
+	content: '\2713'
+}
+
+.form-field.cross::after {
+	color: #f00;
+	content: '\2717'
+}
+
+.text-center {
+	text-align: center;
+}
